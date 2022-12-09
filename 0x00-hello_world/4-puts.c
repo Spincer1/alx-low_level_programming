@@ -21,5 +21,3 @@ int main(void)
 			return (0);
 
 }
-Then run in terminal 
-gcc 4-puts.c -o 4-puts
