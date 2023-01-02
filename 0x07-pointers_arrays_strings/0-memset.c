@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - entry point
  * _memset - fills memory with a constant byte
