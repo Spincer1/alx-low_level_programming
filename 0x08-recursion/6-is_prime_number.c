@@ -1,21 +1,27 @@
 #include "main.h"
-
-int is_divisible(int num, int div);
-int is_prime_number(int n);
-
 /**
- * is_divisible - checks if a number is divisible.
- * @num: the number to be checked.
- * @div: the divisor.
- *
- * Return: if thr number is divisible -0.
- * 	if the number is not divisible -1.
- */
-int is_divisible(int num, int div)
+* is_prime_number - returns a prime number
+* @n: takes in an integer
+* Return: 1 if n a prime number or 0 if not prime
+**/
+int is_prime_number(int n)
 {
-	if (num % div == 0)
-		return (0);
-	if (div == num / 2)
+if (n == 1 || n < 0)
+return (0);
+return (pnumber(2, n));
+
+}
+/**
+* pnumber - help me to find the prime number
+* @x: integer
+* @n: integer
+* Return: 1 if prime or 0 if not
+**/
+int pnumber(int x, int n)
+{
+	if (n == x)
 		return (1);
-	return (is_divisible(num, div + 1));
+	else if (n % x == 0)
+		return (0);
+	return (pnumber(x + 1, n));
 }
